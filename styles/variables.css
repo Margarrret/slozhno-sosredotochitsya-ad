@@ -12,6 +12,7 @@
   --bg-image: url(../images/bg-neon.svg);
   --rec-display: block;
   --text-shadow-color: #ff007a;
+  --menu-button-color: #ff007a;
 }
 
 /* Принудительная тёмная тема */
@@ -25,6 +26,7 @@
   --bg-image: url(../images/bg-neon.svg);
   --rec-display: block;
   --text-shadow-color: #ff007a;
+  --menu-button-color: #ff007a;
 }
 
 /* Принудительная светлая тема («День») */
@@ -37,7 +39,8 @@
   --card-bg-color: #ffffff;
   --bg-image: url(../images/bg-white.svg);
   --rec-display: none;
-  --text-shadow-color: transparent; /* Отключаем тень в светлой теме */
+  --text-shadow-color: transparent;
+  --menu-button-color: #1a1a1a;
 }
 
 /* Автоматический режим (если у пользователя в ОС светлая тема) */
@@ -52,5 +55,6 @@
     --bg-image: url(../images/bg-white.svg);
     --rec-display: none;
     --text-shadow-color: transparent;
+    --menu-button-color: #1a1a1a;
   }
 }

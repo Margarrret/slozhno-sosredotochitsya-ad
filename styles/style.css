@@ -1,4 +1,4 @@
-/* Общие стили для страницы */
+/* Базовые стили привязки к теме */
 body {
   background-color: var(--bg-color);
   background-image: var(--bg-image);
@@ -52,6 +52,7 @@ body {
   font-family: var(--font-main);
   font-size: 18px;
   text-transform: uppercase;
+  line-height: 23.4px;
 }
 
 .header__rec-marker::after {
@@ -84,9 +85,10 @@ body {
   font-family: var(--font-main);
   font-size: 18px;
   text-transform: uppercase;
-  color: var(--accent-color);
+  color: var(--menu-button-color);
   cursor: pointer;
   transition: opacity 0.2s ease;
+  line-height: 23.4px;
 }
 
 .header__theme-menu-button:hover {
@@ -226,7 +228,7 @@ body {
   text-shadow: 4px 4px 0 var(--text-shadow-color);
 }
 
-/* Медиавыражение для планшетов (от 768px) */
+/* Планшетная сетка (от 768px) */
 @media (min-width: 768px) {
   .header,
   .footer {
@@ -292,7 +294,7 @@ body {
   }
 }
 
-/* Медиавыражение для десктопов (от 1024px) */
+/* Десктопная сетка (от 1024px) */
 @media (min-width: 1024px) {
   .header__theme-menu {
     justify-self: center;
