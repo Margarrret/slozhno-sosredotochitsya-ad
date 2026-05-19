@@ -1,3 +1,5 @@
+/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
+
 *,
 *::before,
 *::after {
@@ -5,22 +7,9 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-}
-
-.page {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: var(--font-main);
-  background-image: var(--bg-image);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1,
@@ -42,13 +31,6 @@ ul {
 picture {
   margin: 0;
   padding: 0;
-  display: block;
-}
-
-img {
-  max-inline-size: 100%;
-  block-size: auto;
-  display: block;
 }
 
 button,
@@ -57,6 +39,9 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  cursor: pointer;
-  text-decoration: none;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
 }

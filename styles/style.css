@@ -1,3 +1,15 @@
+/* Общие стили для страницы */
+body {
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--text-color);
+  font-family: var(--font-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .decorated-zone {
   position: relative;
 }
@@ -72,6 +84,7 @@
   font-family: var(--font-main);
   font-size: 18px;
   text-transform: uppercase;
+  color: var(--accent-color);
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
@@ -95,7 +108,7 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.82;
   color: var(--accent-color);
-  text-shadow: 4px 4px 0 var(--text-shadow-color, var(--accent-color));
+  text-shadow: 4px 4px 0 var(--text-shadow-color);
   align-self: center;
 }
 
@@ -110,6 +123,7 @@
   font-size: 18px;
   line-height: 23.4px;
   font-weight: bold;
+  color: var(--text-color);
 }
 
 .title-decor {
@@ -163,6 +177,8 @@
   line-height: 23.4px;
   padding: 5px;
   inline-size: fit-content;
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
 }
 
 .card__title_sub {
@@ -170,12 +186,16 @@
   font-size: 18px;
   line-height: 23.4px;
   font-weight: normal;
+  background: transparent;
+  color: var(--text-color);
+  padding: 0;
 }
 
 .card__text {
   font-family: var(--font-main);
   font-size: 18px;
   line-height: 23.4px;
+  color: var(--text-color);
 }
 
 .gallery {
@@ -203,9 +223,10 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.82;
   color: var(--accent-color);
-  text-shadow: 4px 4px 0 var(--text-shadow-color, var(--accent-color));
+  text-shadow: 4px 4px 0 var(--text-shadow-color);
 }
 
+/* Медиавыражение для планшетов (от 768px) */
 @media (min-width: 768px) {
   .header,
   .footer {
@@ -271,6 +292,7 @@
   }
 }
 
+/* Медиавыражение для десктопов (от 1024px) */
 @media (min-width: 1024px) {
   .header__theme-menu {
     justify-self: center;
