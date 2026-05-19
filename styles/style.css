@@ -32,7 +32,7 @@
 }
 
 .header__rec-marker {
-  display: var(--rec-display);
+  display: var(--rec-display, block);
   position: absolute;
   top: clamp(10px, 2.5vw, 20px);
   right: clamp(35px, 5vw, 45px);
@@ -56,6 +56,7 @@
 .header__theme-menu {
   justify-self: end;
   margin-block-start: 10px;
+  z-index: 1;
 }
 
 .header__theme-menu-list {
@@ -93,7 +94,7 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.82;
   color: var(--accent-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--text-shadow-color, var(--accent-color));
   align-self: center;
 }
 
@@ -137,7 +138,9 @@
   font-family: var(--font-main);
   font-size: 18px;
   line-height: 23.4px;
-  padding: 5px;
+  padding-block: 5px;
+  color: var(--text-color);
+  font-weight: bold;
 }
 
 .content__cards-container {
@@ -150,6 +153,7 @@
   gap: 10px;
   background-color: var(--card-bg-color);
   padding: 20px;
+  border: 1px solid var(--border-color);
 }
 
 .card__title {
@@ -173,22 +177,6 @@
   line-height: 23.4px;
 }
 
-.content__link {
-  text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color);
-  border-block-end: 2px solid currentColor;
-  transition: outline 0.1s ease;
-}
-
-.content__link:hover {
-  border-block-end-color: transparent;
-}
-
-.content__link:focus-visible {
-  outline: 2px dashed var(--accent-color);
-  outline-offset: 4px;
-}
-
 .gallery {
   display: grid;
   gap: 10px;
@@ -198,6 +186,7 @@
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
+  border: 1px solid var(--border-color);
 }
 
 .footer {
@@ -213,7 +202,7 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.82;
   color: var(--accent-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--text-shadow-color, var(--accent-color));
 }
 
 @media (min-width: 768px) {
