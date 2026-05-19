@@ -11,7 +11,7 @@
   flex-direction: column;
 }
 
-.header { 
+.header {
   height: 100vh;
   min-height: 668px;
   background-size: cover;
@@ -24,7 +24,7 @@
 }
 
 .decorated-zone::after,
-.decorated-zone::before { 
+.decorated-zone::before {
   content: "";
   position: absolute;
   inline-size: 25px;
@@ -45,7 +45,7 @@
   left: 20px;
 }
 
-.rec-label { 
+.rec-label {
   color: var(--label-color);
   line-height: 24px;
   position: absolute;
@@ -56,7 +56,7 @@
   font-size: 17.2px;
 }
 
-.rec-label::after { 
+.rec-label::after {
   border-radius: 50%;
   width: 9px;
   height: 9px;
@@ -67,7 +67,7 @@
   margin-inline-start: 10px;
 }
 
-.header__theme-menu { 
+.header__theme-menu {
   justify-self: center;
   align-self: self-start;
   padding-top: 18px;
@@ -117,7 +117,7 @@
   border-top-color: transparent;
 }
 
-.header__text { 
+.header__text {
   display: flex;
   flex-direction: column;
   padding: 240px 0 92px;
@@ -155,10 +155,10 @@
   width: 100%;
   padding-top: 60px;
   padding-right: 20px;
-  padding-left: 20px
+  padding-left: 20px;
 }
 
-.shadow-correction { 
+.shadow-correction {
   text-decoration: none;
   text-shadow: 2px 2px 0px var(--background-color);
   border-radius: 0;
@@ -200,7 +200,7 @@
   gap: 10px;
 }
 
-.main__paragraph { 
+.main__paragraph {
   color: var(--par-main-color);
   font-family: 'IBM Plex mono', 'Courier New', Courier, monospace, sans-serif;
   font-weight: 400;
@@ -214,7 +214,7 @@
   grid-row-end: 3;
 }
 
-.main_why-section { 
+.main_why-section {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(4, min-content);
@@ -348,7 +348,7 @@
   text-shadow: 2px 2px var(--background-color);
 }
 
-@media (width<=768px) { 
+@media (width <= 768px) {
   .header__theme-menu {
     padding-top: 190px;
     justify-self: end;
@@ -394,14 +394,14 @@
 
   .footer-title {
     padding-top: 180px;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
-@media (width<=375px) { 
+@media (width <= 375px) {
   .header {
-      grid-template-rows: min-content auto;
-    }
+    grid-template-rows: min-content auto;
+  }
 
   .header__theme-menu {
     padding-top: 72px;
@@ -430,7 +430,7 @@
     font-size: 18px;
   }
 
- .header__text {
+  .header__text {
     padding: 71px 0 76px 10px;
     gap: 51px;
   }
@@ -508,7 +508,7 @@
   }
 }
 
-@media (width<=420px) {
+@media (width <= 420px) {
   .main_how-section {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -520,7 +520,7 @@
   }
 
   .main-problem {
-    grid-column: 1/4;
+    grid-column: 1 / 4;
   }
 
   .main_why-section {
