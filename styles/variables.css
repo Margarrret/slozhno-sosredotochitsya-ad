@@ -1,4 +1,59 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+/* variables.css */
+
+/* 1. Базовые переменные — Тёмная тема (Неон) — Основная */
+:root {
+  --font-main: "Inter", sans-serif;
+  --font-accent: "Inter", sans-serif;
+
+  --bg-color: #000000;
+  --text-color: #f5f5f5;
+  --accent-color: #ff007a; /* Розовый неон */
+  --accent-text-color: #000000;
+  --border-color: #ff007a;
+  --card-bg-color: rgba(255, 255, 255, 0.05);
+  
+  /* Фоновые изображения для тёмной темы */
+  --bg-image: url(../images/bg-neon.svg);
+  --rec-display: block; /* Маркер REC виден в темной теме */
+}
+
+/* 2. Переопределение переменных для Светлой темы (День) */
+:root.theme_day {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --accent-color: #ff007a; /* Акцентный розовый обычно остаётся, но становится светлее/ярче при необходимости */
+  --accent-text-color: #ffffff;
+  --border-color: #1a1a1a;
+  --card-bg-color: #f5f7fa;
+  
+  /* Корректируем элементы по ТЗ для светлой темы */
+  --bg-image: url(../images/bg-white.svg); /* Меняем фоновую картинку страницы */
+  --rec-display: none; /* Скрываем маркер REC в светлой теме по макету */
+}
+
+/* 3. Автоматическая тема на основе системных настроек пользователя */
+:root.theme_auto {
+  /* По умолчанию дублирует темную тему */
+  --bg-color: #000000;
+  --text-color: #f5f5f5;
+  --accent-color: #ff007a;
+  --accent-text-color: #000000;
+  --border-color: #ff007a;
+  --card-bg-color: rgba(255, 255, 255, 0.05);
+  --bg-image: url(../images/bg-neon.svg);
+  --rec-display: block;
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme_auto {
+    /* Если в ОС включен светлый режим, переключаем переменные */
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --accent-color: #ff007a;
+    --accent-text-color: #ffffff;
+    --border-color: #1a1a1a;
+    --card-bg-color: #f5f7fa;
+    --bg-image: url(../images/bg-white.svg);
+    --rec-display: none;
+  }
+}
