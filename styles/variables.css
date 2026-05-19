@@ -1,60 +1,15 @@
-/* Базовая тёмная тема по умолчанию («Неон») */
+/* Светлая тема по умолчанию */
 :root {
-  --font-main: "Inter", sans-serif;
-  --font-accent: "Inter", sans-serif;
-
-  --bg-color: #000000;
-  --text-color: #f5f5f5;
-  --accent-color: #ff007a;
-  --accent-text-color: #000000;
-  --border-color: #ff007a;
-  --card-bg-color: rgba(255, 255, 255, 0.05);
-  --bg-image: url(../images/bg-neon.svg);
-  --rec-display: block;
-  --text-shadow-color: #ff007a;
-  --menu-button-color: #ff007a;
-}
-
-/* Принудительная тёмная тема */
-:root.theme-dark {
-  --bg-color: #000000;
-  --text-color: #f5f5f5;
-  --accent-color: #ff007a;
-  --accent-text-color: #000000;
-  --border-color: #ff007a;
-  --card-bg-color: rgba(255, 255, 255, 0.05);
-  --bg-image: url(../images/bg-neon.svg);
-  --rec-display: block;
-  --text-shadow-color: #ff007a;
-  --menu-button-color: #ff007a;
-}
-
-/* Принудительная светлая тема («День») */
-:root.theme-light {
-  --bg-color: #ffffff;
-  --text-color: #1a1a1a;
-  --accent-color: #ff007a;
-  --accent-text-color: #ffffff;
-  --border-color: #1a1a1a;
-  --card-bg-color: #ffffff;
-  --bg-image: url(../images/bg-white.svg);
+  --bg-image: none;
+  --title-color: #FFC2E6;
+  --background-color: #FF8DCB;
+  --text-color: #353430;
+  --background-color-page: #FFF1F7;
+  --button-color: #353430;
+  --par-color: #353430;
+  --par-main-color: #353430;
+  --subtitles-color: #353430;
+  --title-main-color: #353430;
+  --label-color: #FF0070; /* REC по умолчанию скрыт в светлой теме */
   --rec-display: none;
-  --text-shadow-color: transparent;
-  --menu-button-color: #1a1a1a;
-}
-
-/* Автоматический режим (если у пользователя в ОС светлая тема) */
-@media (prefers-color-scheme: light) {
-  :root.theme-auto {
-    --bg-color: #ffffff;
-    --text-color: #1a1a1a;
-    --accent-color: #ff007a;
-    --accent-text-color: #ffffff;
-    --border-color: #1a1a1a;
-    --card-bg-color: #ffffff;
-    --bg-image: url(../images/bg-white.svg);
-    --rec-display: none;
-    --text-shadow-color: transparent;
-    --menu-button-color: #1a1a1a;
-  }
 }
